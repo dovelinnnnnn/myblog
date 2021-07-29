@@ -1,0 +1,104 @@
+.wrapper {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    margin: -290.5px auto 0 auto;
+}
+@media (max-width: 768px){
+.container, .container-sm {
+    max-width: 100% !important;
+}}
+@media only screen and (max-width: 768px){
+.wrapper {
+    position: relative !important;
+    margin: 15px auto !important;
+}
+}
+
+
+h4, h5, h6 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+p {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+    margin: 0;
+    color: #999 !important;
+    font-family: 'Lato', sans-serif;
+    word-wrap: break-word;
+}
+
+a {
+    text-decoration: none !important;
+}
+a {
+    color: #3B5998;
+}
+a {
+    background: transparent;
+}
+.clearfix:before, .clearfix:after, .row:before, .row:after {
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+*{padding:0;margin:0;}
+.row>*{
+  flex-shrink: unset !important;
+}
+ol,ul{
+  padding-left: 0 !important;
+  /* margin-bottom: 10px !important; */
+}
+ul, li, nav {
+    font: inherit;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+p {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+    margin: 0;
+    color: #999 !important;
+    font-family: 'Lato', sans-serif;
+}
+html, body { 
+   height: 100%;
+}
+/* background */
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 25px;
+    color: #333333;
+    overflow-x: hidden;
+    background-image: url('/images/bg/bg5.png');
+    padding: 0;
+}
+/* tittle */
+.resp-tabs-container h1 {
+    font-size: 26px;
+    color: #999;
+    text-transform: inherit;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  .resp-tabs-container h1 {
+    color: #3b5998 !important;
+    background: url(../../assets/images/arrow-DarkBlue-h3.png) no-repeat 0px 3px;
+  }
