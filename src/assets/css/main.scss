@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .wrapper {
     display: block;
     width: 100%;
@@ -102,3 +103,21 @@ body {
     color: #3b5998 !important;
     background: url(../../assets/images/arrow-DarkBlue-h3.png) no-repeat 0px 3px;
   }
+=======
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Lato' sans-serif;
+    font-weight: 300;
+}
+h1{
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+.widget-profile h4{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 0px;
+    font-weight: 100;
+}
+>>>>>>> a1d62548bf32d466656040a0d3522c3db0d1525b
