@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # blog5
-=======
-# blog3
->>>>>>> a1d62548bf32d466656040a0d3522c3db0d1525b
 
 ## Project setup
 ```
