@@ -5,6 +5,8 @@ function resolve (dir) {
 }
 
 module.exports = {
+  runtimeCompiler: true,
+  publicPath: './',
   chainWebpack: (config) => {
     config
       .resolve.alias
