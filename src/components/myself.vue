@@ -39,21 +39,8 @@
         <!-- Name -->
         <div id="profile_social" class="col-sm-0">
           <h6>My Social Profiles</h6>
-          <div>
-            <span @click="copyMsg(0)"
-              ><font-awesome-icon :icon="['fas', 'phone']"
-            /></span>
-            <span @click="copyMsg(1)"
-              ><font-awesome-icon :icon="['fab', 'qq']"
-            /></span>
-            <span @click="copyMsg(2)"
-              ><font-awesome-icon :icon="['fas', 'envelope']"
-            /></span>
-            <span @click="copyMsg(3)" style="margin-right: 0"
-              ><font-awesome-icon :icon="['fab', 'weixin']"
-            /></span>
+            <profile-icons />
             <div class="clear"></div>
-          </div>
         </div>
         <!-- End Name -->
       </div>
@@ -62,7 +49,9 @@
 </template>
 
 <script>
+import profileIcons from 'components/profileIcons'
 export default {
+  components: { profileIcons },
   data () {
     return {
       photos: {
@@ -198,28 +187,7 @@ h6 {
 .widget-profile #profile_social {
     padding-top: 15px;
 }
-#profile_social span {
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    margin: 0px 0px 0px 5px;
-    padding: 0;
-    border-width: 1px;
-    border-style: solid;
-    text-align: center;
-    font-size: 24px;
-    float: left;
-    display: block;
-    color: #fff;
-    -webkit-transition: all .3s ease-in;
-    -moz-transition: all .3s ease-in;
-    -o-transition: all .3s ease-in;
-    transition: all .3s ease-in;
-}
-#profile_social span:hover {
-  color: #3b5998;
-  background-color:#fff;
-}
+
 @media only screen and(max-width:767px) {
   .widget-profile {
     height: 285px !important;
@@ -247,7 +215,7 @@ h6 {
   }
 }
 
-@media only screen and (min-width: 768px)and (max-width: 799px) {
+@media only screen and (min-width: 768px)and (max-width: 991px) {
   .widget-profile{
     height: 210px !important;
   }
@@ -259,50 +227,17 @@ h6 {
     display: none;
   }
 }
-@media only screen and (min-width: 800px) and (max-width: 991px) {
-  .widget-profile {
-    height: 210px !important;
-    margin-bottom: 20px;
-    float: none;
-  }
-  #profile_desc {
-    border-bottom: 0 !important;
-  }
-  #profile_social {
-    display: none;
-  }
-  #profile_social span {
-    width: 34px;
-    height: 34px;
-    line-height: 34px;
-    font-size: 20px;
-    margin-left: 15px;
-  }
-}
-@media only screen and (max-width: 1199px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   .widget-profile h1 {
     font-size: 24px;
     line-height: 50px;
   }
-  #profile_social span {
-    width: 34px;
-    height: 34px;
-    line-height: 34px;
-    font-size: 20px;
-    margin-left: 15px;
-}
+
 }
 @media only screen and (min-width: 1200px) {
   .widget-profile h1 {
     font-size: 25px;
     line-height: 60px;
-  }
-  #profile_social span {
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    font-size: 24px;
-    margin-left: 17px;
   }
 }
 </style>

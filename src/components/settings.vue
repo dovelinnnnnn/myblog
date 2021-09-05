@@ -1,5 +1,5 @@
 <template>
-  <div id="custumize-style" style="display: block; left: -270px;" :class="{'open':open}" @click="switcher">
+  <div id="custumize-style" style="display: none; left: -270px;" :class="{'open':open}" @click="switcher">
         <h2>Style Selector<div  class="icon-switcher"><font-awesome-icon :icon="['fas', 'cogs']" class="svg"/></div></h2>
         <div>
             <h3>Theme Color</h3>
