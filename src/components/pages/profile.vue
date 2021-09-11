@@ -43,7 +43,7 @@ export default {
       return this.$store.state.myProfile.myDetails
     },
     services () {
-      console.log(this.$store.state.myProfile.serviceInfo)
+      // console.log(this.$store.state.myProfile.serviceInfo)
       return this.$store.state.myProfile.serviceInfo
     }
   },

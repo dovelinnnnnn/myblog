@@ -73,7 +73,7 @@ export default {
   props: ['info'],
   computed: {
     myInfo () {
-      console.log(this.info)
+      // console.log(this.info)
       return this.info.myInfo
     },
     myIntroduce () {
