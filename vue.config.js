@@ -15,6 +15,12 @@ module.exports = {
       .set('components', resolve('./src/components'))
       // .set('views', resolve('./src/views'))
       .set('assets', resolve('./src/assets'))
+    config.externals({
+      vue: 'Vue',
+      vuex: 'Vuex',
+      axios: 'axios',
+      bootstrap: 'bootstrap'
+    })
   },
   configureWebpack: {
     // 支持jquery

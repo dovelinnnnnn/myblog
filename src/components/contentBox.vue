@@ -21,6 +21,7 @@ import portfolio from 'components/pages/portfolio.vue'
 import blog from 'components/pages/blog.vue'
 import contact from 'components/pages/contact.vue'
 import toggle from 'components/toggle.vue'
+// import '@/assets/css/main.scss'
 export default {
   components: {
     navbar, toggle, profile, resume, portfolio, blog, contact

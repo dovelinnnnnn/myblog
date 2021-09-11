@@ -136,8 +136,6 @@
                     name="submit"
                     data-color="green"
                     data-style="expand-left"
-                    formaction='http://127.0.0.1:5000/contact'
-                    formmethod='post'
                     @click.prevent='contactMe(questName,questMail,questMsg)'
                   >
                     发送
@@ -176,8 +174,9 @@ export default {
     contactMe (name, mail, msg) {
       axios({
         method: 'post',
-        // url: 'http://data.dovelin.cn/contact',
-        url: 'http://127.0.0.1:5000/contact',
+        url: 'http://data.dovelin.cn/contact',
+        // url: 'https://data.dovelin.cn/contact',
+        // url: 'http://127.0.0.1:5000/contact',
         data: {
           name: name,
           mail: mail,

@@ -2,16 +2,16 @@
   <fade-show></fade-show>
   <div class="wrapper">
     <!-- <section class="tab-content"> -->
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="row">
-              <myself />
-              <content-box />
-            </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <myself />
+            <content-box />
           </div>
         </div>
       </div>
+    </div>
     <!-- </section> -->
   </div>
   <settings />
@@ -29,7 +29,9 @@ export default {
     settings,
     contentBox,
     fadeShow
-  }
+  },
+  setup () {}
+
 }
 </script>
 
@@ -39,7 +41,7 @@ body {
   background-image: url("../public/images/bg/bg5.png");
 }
 
-.offcanvas{
+.offcanvas {
   width: 366px;
   left: 50% !important;
   top: 50% !important;
@@ -47,11 +49,11 @@ body {
   bottom: unset !important;
   // position: fixed !important;
 }
-.offcanvas.show{
+.offcanvas.show {
   transform: translate(-50%, -50%) scale(1) !important;
 }
-.offcanvas-body .imgstyle{
+.offcanvas-body .imgstyle {
   width: 100%;
 }
-
+i{font-style:normal;}
 </style>

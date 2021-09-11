@@ -30,8 +30,10 @@
         <!-- Profile Description -->
         <div id="profile_desc">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac
-            risus nibh. Donec adipiscing luctus tur
+            有人夸我是个好朋友,因为我待人友善为人着想；
+            有人夸我是个好同事,因为我团结友爱互帮互助；
+            有人夸我是个好员工,因为我尽心尽力勤奋认真；
+            我觉得我是个人生赢家,因为我有好多'对象'。
           </p>
         </div>
         <!-- End Profile Description -->
@@ -120,7 +122,10 @@ export default {
   height: 580px;
   float: right;
 }
-
+#profile_desc p {
+  margin-bottom: 0;
+  // text-align: center;
+}
 .head-image {
   position: absolute;
   top: 0;
@@ -221,6 +226,7 @@ h6 {
   }
   .widget-profile #profile_desc {
     border-bottom: 0 !important;
+    padding-top: 5px;
   }
 
   #profile_social {
@@ -232,7 +238,6 @@ h6 {
     font-size: 24px;
     line-height: 50px;
   }
-
 }
 @media only screen and (min-width: 1200px) {
   .widget-profile h1 {

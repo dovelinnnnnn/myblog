@@ -1,32 +1,30 @@
 <template>
   <div class="contentBox">
-    <!-- .title -->
-    <h1>简介 - 关于我</h1>
-    <div class="row top-p">
-      <div class="col-lg-6 profile-l">
-        <!--About me-->
-      <myDetails :info='myDetails' />
-      </div>
-      <!-- End left-wrap -->
 
-      <div class="col-lg-6 col-xxl-5 profile-r">
+    <h1>简介 - 关于我</h1>
+
+    <div class="row">
+      <!-- 个人信息 -->
+      <div class="col-lg-6">
+        <myDetails :info='myDetails' />
+      </div>
+
+      <div class="col-lg-6 col-xxl-5">
+        <!-- 轮播图 -->
         <pImg />
       </div>
     </div>
-    <div class="clear"></div>
 
     <div class="row" id="services">
+      <!-- 我的服务1-->
       <myService :services=services />
     </div>
-    <!-- End Services -->
 
-    <div class="clear"></div>
     <div class="border-list"></div>
-
     <div class="row">
+      <!-- 我的服务2 -->
       <my-service-two :services=services />
     </div>
-    <div class="clear"></div>
   </div>
 </template>
 
@@ -65,32 +63,7 @@ export default {
 .carousel-item{
   text-align: center;
 }
-.about {
-  margin-bottom: 30px !important;
-}
-ul.about li {
-  margin: 0;
-  color: #717171;
-  display: block;
-  font-size: 13px;
-  border-bottom: 1px solid #e6e6e6;
-}
-.glyphicon {
-  margin-right: 8px;
-  color: #3b5998;
-}
-label {
-  color: #3b5998;
-  margin-bottom: 5px;
-}
-.glyphicon:empty {
-  width: 1em;
-}
-ul.about li span.value {
-  width: 220px;
-  text-align: left;
-  float: right;
-}
+
 .resp-tabs-list,
 p {
   margin: 0;

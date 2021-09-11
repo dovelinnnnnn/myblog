@@ -1,7 +1,7 @@
 <template>
   <div class="col-lg-12">
     <div class="title_content">
-      <div class="text_content">My Services 1</div>
+      <div class="text_content">我的服务 1</div>
       <div class="clear"></div>
     </div>
     <div class="col-lg-4 pack-service" v-for="(val,key,index) in services" :key=index>
